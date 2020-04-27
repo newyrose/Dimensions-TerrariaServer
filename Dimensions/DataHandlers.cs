@@ -96,7 +96,7 @@ namespace Dimensions
                 {
                     if (TShock.Config.KickProxyUsers)
                     {
-                        player.Kick("Proxies are not allowed.", true, true);
+                        TShock.Utils.ForceKick(player, "Proxies are not allowed.", true, true);
                         return false;
                     }
                 }
